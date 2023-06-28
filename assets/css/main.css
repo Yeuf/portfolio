@@ -2643,7 +2643,8 @@ input, select, textarea {
 			}
 
 			.image.main img {
-				width: 100%;
+				width: 80%;
+				margin: 0 auto;
 			}
 
 		@media screen and (max-width: 736px) {
@@ -2677,7 +2678,12 @@ input, select, textarea {
 		}
 
 /* Actions */
-
+	ul.bidouille{
+	margin-top: 168px;
+	}
+	ul.bidouille2{
+		margin-top: 200px;
+		}
 	ul.actions {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -2701,6 +2707,8 @@ input, select, textarea {
 			justify-content: center;
 			width: 100%;
 			margin-left: 0;
+			position : relative;
+			
 		}
 
 			ul.actions.special li:first-child {
