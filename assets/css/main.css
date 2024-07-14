@@ -2726,6 +2726,16 @@ input[type="radio"]:focus + label:before {
   width: 100%;
 }
 
+.image.grid {
+  display: block;
+  overflow: hidden; /* Ensure images don't overflow */
+}
+
+.image.grid img {
+  max-width: 100%; /* Ensure images resize responsively */
+  height: auto; /* Maintain aspect ratio */
+}
+
 .image.fit:first-child {
   margin-top: 0;
 }
@@ -2748,6 +2758,12 @@ input[type="radio"]:focus + label:before {
 .image.main img {
   width: 60%;
   margin: 0 auto;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-gap: 10px; /* Gap between images */
 }
 
 @media screen and (max-width: 736px) {
