@@ -2728,12 +2728,17 @@ input[type="radio"]:focus + label:before {
 
 .image.grid {
   display: block;
-  overflow: hidden; /* Ensure images don't overflow */
+  overflow: hidden;
+  width: auto;
 }
 
 .image.grid img {
-  max-width: 100%; /* Ensure images resize responsively */
-  height: auto; /* Maintain aspect ratio */
+  width: 100%;
+  height: auto;
+}
+
+.image.grid hover {
+  transform: scale(1.5);
 }
 
 .image.fit:first-child {
